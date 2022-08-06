@@ -22,7 +22,7 @@ nav a {
   color: white;
 }
 nav span {
-  padding: 20px;
+  padding: 5px;
 }
 
 .card {
@@ -59,4 +59,9 @@ nav span {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.footer{
+  position: fixed;
+  bottom: 0;
 }

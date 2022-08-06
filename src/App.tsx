@@ -27,12 +27,14 @@ const App = () => {
     const nav = (
         <nav>
             <Container>
-                {training >= 0 && <a><FontAwesomeIcon
-                    icon={faLongArrowAltLeft}
-                    className="back"
-                    onClick={() => {
-                        setTraining(-1)
-                    }}/></a>
+                {training >= 0 && <a onClick={() => {
+                    setTraining(-1)
+                }}>
+                    <FontAwesomeIcon
+                        icon={faLongArrowAltLeft}
+                        className="back"
+                    />
+                </a>
                 }
                 <span>Testovací aplikace - autogenní trénink</span>
             </Container>
@@ -70,9 +72,10 @@ const App = () => {
                     </Container>
                 )
             }
-            <Footer>
+            <Footer className="footer">
                 <Container>
-                    V případě jakéhokoli dotazu, pište prosím na: <a href="mailto:xtesar36@vutbr.cz">xtesar36@vutbr.cz</a>
+                    V případě jakéhokoli dotazu, pište prosím na: <a
+                    href="mailto:xtesar36@vutbr.cz">xtesar36@vutbr.cz</a>
                 </Container>
             </Footer>
         </div>
