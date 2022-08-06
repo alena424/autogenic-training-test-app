@@ -1,4 +1,3 @@
-
 export type Training = {
     source: string
     isAccomplished: boolean

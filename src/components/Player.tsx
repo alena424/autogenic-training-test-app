@@ -1,8 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 import { Training } from "../models/Training"
 
-import PlayerDetails from "./PlayerDetails"
-import PlayerControls from "./PlayerControl"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPause, faPlay } from "@fortawesome/free-solid-svg-icons";
 import { Button } from "react-bulma-components";
@@ -13,9 +11,9 @@ type PlayerProps = {
 }
 
 const Player: React.FC<PlayerProps> = ({
-                                           training,
-                                           order,
-                                       }) => {
+    training,
+    order,
+}) => {
     const audioElement = React.useRef<HTMLAudioElement>(null);
     const [isPlaying, setIsPlaying] = React.useState(false);
     const [currentTime, setCurrentTime] = useState(0);

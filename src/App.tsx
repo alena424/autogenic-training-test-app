@@ -1,28 +1,13 @@
 import React from 'react';
 import { Block, Card, Columns, Container, Footer, Menu } from "react-bulma-components"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+    faLongArrowAltLeft,
+} from "@fortawesome/free-solid-svg-icons"
+
 import './App.css';
 import Player from "./components/Player"
-import { Training } from "./models/Training"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-    faBackspace,
-    faBackward, faLongArrowAltLeft,
-} from "@fortawesome/free-solid-svg-icons";
-
-const data: Training[] = [
-    {
-        source: "./trainings/princess.mp3",
-        img_source: "./img/mountains.jpeg",
-        title: "Fairy tail",
-        isAccomplished: true,
-    },
-    {
-        source: "./trainings/princess.mp3",
-        img_source: "./img/mountains.jpeg",
-        title: "Fairy tail",
-        isAccomplished: false,
-    },
-]
+import { data } from "./models/constants"
 
 const App = () => {
     const [training, setTraining] = React.useState(-1);
