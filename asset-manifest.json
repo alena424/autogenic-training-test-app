@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/autogenic-training-test-app/static/css/main.e18f23ff.css",
-    "main.js": "/autogenic-training-test-app/static/js/main.ab87798c.js",
+    "main.css": "/autogenic-training-test-app/static/css/main.54105114.css",
+    "main.js": "/autogenic-training-test-app/static/js/main.55b064d5.js",
     "static/js/787.69ad3734.chunk.js": "/autogenic-training-test-app/static/js/787.69ad3734.chunk.js",
     "index.html": "/autogenic-training-test-app/index.html",
-    "main.e18f23ff.css.map": "/autogenic-training-test-app/static/css/main.e18f23ff.css.map",
-    "main.ab87798c.js.map": "/autogenic-training-test-app/static/js/main.ab87798c.js.map",
+    "main.54105114.css.map": "/autogenic-training-test-app/static/css/main.54105114.css.map",
+    "main.55b064d5.js.map": "/autogenic-training-test-app/static/js/main.55b064d5.js.map",
     "787.69ad3734.chunk.js.map": "/autogenic-training-test-app/static/js/787.69ad3734.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e18f23ff.css",
-    "static/js/main.ab87798c.js"
+    "static/css/main.54105114.css",
+    "static/js/main.55b064d5.js"
   ]
 }
