@@ -3,24 +3,25 @@ import { Training } from "../models/Training"
 
 type PlayerDetailsProps = {
     training: Training
+    order: number
 }
 
 const PlayerDetails: React.FC<PlayerDetailsProps> = ({
-    training
+    training,
+    order,
 }) => {
     return (
         <div className="music-player--details">
-            <div className="details-img">
-                <img
-                    className="details-img--image"
-                    src={training.img_source}
-                    alt={training.title}
-                />
-            </div>
-            <div className="range"></div>
+            {/*<div className="details-img">*/}
+            {/*    <img*/}
+            {/*        className="details-img--image"*/}
+            {/*        src={training.img_source}*/}
+            {/*        alt={training.title}*/}
+            {/*    />*/}
+            {/*</div>*/}
             <div className="artist-info">
-                <h3 className="details-title">{training.title}</h3>
-                <div className="line"></div>
+                <h2 className="subtitle">{order}. trénink</h2>
+                <h3 className="title is-4">{training.title}</h3>
             </div>
         </div>
     );

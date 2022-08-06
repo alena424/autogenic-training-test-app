@@ -16,15 +16,15 @@ const PlayerControl: React.FC<PlayerControlProps> = ({
     isPlaying,
     setIsPlaying,
 }) => {
-    // const [isPlaying, setIsPlaying] = React.useState(false)
     return (
         <div className="music-player">
-            <button
-                className="play-btn"
-                onClick={() => setIsPlaying(!isPlaying)}
-            >
-                <FontAwesomeIcon icon={isPlaying ? faPause : faPlay} />
-            </button>
+            <div className="play-btn">
+                <a
+                    onClick={() => setIsPlaying(!isPlaying)}
+                >
+                    <FontAwesomeIcon icon={isPlaying ? faPause : faPlay} />
+                </a>
+            </div>
         </div>
     )
 }

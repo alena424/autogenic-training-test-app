@@ -3,18 +3,26 @@
   --secondary: #3F7D20;
   --background: #F3EFF5;
   --dark: #0D0A0B;
-  background-color: var(--background)
+  background-color: var(--background);
+  color: var(--dark);
 }
-
+.App {
+  background-color: white;
+}
 nav {
   /*height: 100px;*/
-  background-color: var(--primary);
+  background-color: var(--secondary);
   margin: 0;
   color: white;
-  font-size: 20px;
+  font-size: 17px;
+  padding: 10px;
 }
-nav p {
-  padding: 12px;
+
+nav a {
+  color: white;
+}
+nav span {
+  padding: 20px;
 }
 
 .card {
@@ -22,8 +30,8 @@ nav p {
 }
 
 .mainContainer {
-  background-color: white;
-  padding: 40px;
+  /*background-color: white;*/
+  padding: 10px 40px 40px 40px;
 }
 
 .menu {
@@ -32,4 +40,23 @@ nav p {
 
 .back {
   margin: 0 10px 0 10px;
+}
+
+.play-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  border: 1px solid gray;
+  margin: 10px;
+  /*padding: 20px;*/;
+  width: 60px;
+  height: 60px;
+}
+
+.artist-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
